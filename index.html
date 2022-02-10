@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="top-nav">
+        <h1>BOOKSHELF APPS</h1>
+        <form id="search-bar">
+            <input type="search" placeholder="Cari buku..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </header>
+    <main class="container">
+        <section id="input-user">
+            <h2>Masukkan Buku Baru</h2>
+            <div id="title-field">
+                <h3>Judul</h3>
+                <input type="text" id="title-input">
+            </div>
+            <div id="author-field">
+                <h3>Penulis</h3>
+                <input type="text" id="author-input">
+            </div>
+            <div id="year-released-field">
+                <h3>Tahun rilis</h3>
+                <input type="number" id="year-released-input">
+            </div>
+            <div id="image-book-field">
+                <h3>Sampul buku (opsional)</h3>
+                <input type="file" name="book-cover" accept="image/x-png, image/jpeg">
+            </div>
+        </section>
+        <section id="unread-rack">
+            <h2>Belum dibaca</h2>
+            <!-- <div class="list-unread-book">
+                <h2>Judul Buku</h2>
+                <p>Penulis</p>
+                <p>Tahun rilis</p>
+            </div> -->
+        </section>
+        <section id="already-read-rack">
+            <h2>Selesai dibaca</h2>
+            <!-- <div class="list-already-read-book">
+                <h2>Judul Buku</h2>
+                <p>Penulis</p>
+                <p>Tahun rilis</p>
+            </div> -->
+        </section>
+    </main>
+</body>
+
+</html>
