@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -9,48 +9,48 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    height: 100%;
 }
 
-/* header */
+/* nav */
+nav {
+    background-color: #7900ff;
+    position: sticky;
+    top: 0;
+}
 
-header {
-    background-color: white;
-    border-bottom: 1px solid rgb(192, 192, 192);
-    color: #272643;
+#navbar {
+    width: 50%;
+    margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 3.5rem;
 }
 
-header>h1 {
-    font-size: 1.5rem;
-    flex-grow: 30;
-    padding-left: 1.3rem;
+#navbar h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    margin: 0.8rem 0 0.8rem 0;
 }
 
 #search-bar {
-    align-self: center;
-    justify-content: center;
-    flex-grow: 2;
     display: inline-flex;
 }
 
-input[type="search"],
-button[type="submit"] {
+#search-input,
+#search-button {
     height: 2rem;
     border: none;
 }
 
 input[type="search"] {
-    width: 20rem;
+    width: 13rem;
     padding-left: 1.1rem;
     border-radius: 20px 0 0 20px;
-    background-color: #f2f3f4;
+    background-color: white;
 }
 
-button[type="submit"] {
+#search-button {
     width: 3rem;
     border-radius: 0 20px 20px 0;
     border-left: none;
@@ -62,55 +62,147 @@ input[type="search"]:focus {
     outline: none;
 }
 
-/* end of header */
+/* end of nav */
 
 /* main */
 main {
-    display: grid;
-    grid-template-columns: 2fr 3fr 3fr;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "input-user unread-rack unread-rack unread-rack"
-        "input-user already-read-rack already-read-rack already-read-rack";
-    gap: 10px;
-    height: 92%;
-    margin: 1rem 1.5rem;
-    padding-bottom: 2rem;
+    width: 100%;
+}
+
+main section {
+    width: 50%;
+    margin: 1rem auto;
+    border: 1px solid black;
+}
+
+main section,
+.book-item {
+    border-radius: 10px;
+}
+
+main section button {
+    border-radius: 15px;
 }
 
 /* input user */
-#input-user {
-    grid-area: input-user;
-    padding: 1rem;
+#input-book-user h1 {
+    text-align: center;
 }
 
-#input-user h2 {
-    margin-top: 0;
-    text-align: center;
-    border-bottom: black;
+#book-title,
+#book-author,
+#book-year-released,
+button[type="submit"] {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#input-book-user form {
+    margin: 1rem;
+}
+
+#label-book-title,
+#label-book-author,
+#label-book-year-released,
+#label-is-completed {
+    margin-bottom: 0.9rem;
+    font-weight: bold;
+}
+
+#book-title,
+#book-author,
+#book-year-released {
+    width: 100%;
+    height: 2rem;
+    padding: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+#label-is-completed,
+#is-completed {
+    margin-bottom: 0.9rem;
+}
+
+#input-book-user form button {
+    width: 100%;
+    font-weight: 550;
+    padding: 0.5rem 0 0.5rem 0;
+    border: none;
+    color: white;
+    background-color: #548cff;
 }
 
 /* end of input user */
 
-#unread-rack {
-    grid-area: unread-rack;
+/* unread rack */
+#unread-rack h2,
+#already-read-rack h2 {
+    padding-left: 1rem;
 }
 
-#already-read-rack {
-    grid-area: already-read-rack;
-}
+/* end of unread rack */
 
-#input-user,
-#unread-rack,
-#already-read-rack {
+/* book item */
+.book-item {
+    margin: 1rem;
+    padding: 0 1rem 0 1rem;
     border: 1px solid black;
 }
 
+.book-item h3 {
+    margin-top: 1rem;
+}
+
+.book-item button {
+    margin: 0 0.3rem 1rem 0;
+    padding: 0.3em 0.8em;
+    border-radius: 10px;
+    border: none;
+}
+
+.book-item #move-to-already {
+    background-color: green;
+    color: white;
+}
+
+.book-item #move-to-unread {
+    background-color: yellow;
+    color: black;
+}
+
+.book-item .delete-book {
+    background-color: red;
+    color: white;
+}
+
+/* end of book item */
+
 /* end of main */
 
-@media (max-width: 576px) {
-    #search-bar input {
-        width: 10rem;
+/* hover */
+#input-book-user form button:hover {
+    background-color: #296bfa;
+}
+
+#move-to-already:hover,
+#move-to-unread:hover,
+.delete-book:hover {
+    opacity: 0.5;
+}
+
+/* end of hover */
+
+@media (max-width: 800px) {
+    #navbar {
+        width: 100%;
+        padding: 0 1rem 0 1rem;
+    }
+
+    input[type="search"] {
+        width: 7rem;
+    }
+
+    main section {
+        width: 90%;
     }
 }
