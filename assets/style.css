@@ -160,12 +160,12 @@ button[type="submit"] {
     border: none;
 }
 
-.book-item #move-to-already {
+.book-item .move-to-already {
     background-color: green;
     color: white;
 }
 
-.book-item #move-to-unread {
+.book-item .move-to-unread {
     background-color: yellow;
     color: black;
 }
@@ -184,8 +184,8 @@ button[type="submit"] {
     background-color: #296bfa;
 }
 
-#move-to-already:hover,
-#move-to-unread:hover,
+.move-to-already:hover,
+.move-to-unread:hover,
 .delete-book:hover {
     opacity: 0.5;
 }
