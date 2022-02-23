@@ -135,8 +135,8 @@ button[type="submit"] {
 /* end of input user */
 
 /* unread rack */
-#unread-rack h2,
-#already-read-rack h2 {
+section h2,
+section h2 {
     padding-left: 1rem;
 }
 

@@ -15,7 +15,8 @@
         <div id="navbar">
             <h1>Bookshelf Apps</h1>
             <form id="search-bar">
-                <input type="search" placeholder="Cari buku..." name="search" id="search-input">
+                <input type="search" placeholder="Cari buku..." name="search" title="Cari buku di masing-masing rak"
+                    id="search-input">
                 <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
             </form>
         </div>
@@ -35,28 +36,31 @@
                 <button type="submit">Masukkan ke dalam rak</button>
             </form>
         </section>
-        <section id="unread-rack">
+        <section>
             <h2>Belum dibaca</h2>
-            <!-- <div class="book-item">
+            <div class="all-books" id="unread-rack">
+                <!-- <div class="book-item">
                 <h3>Harry Potter</h3>
                 <p>Penulis: J.K. Rowlins</p>
                 <p>Tahun rilis: 2021</p>
                 <button class="move-to-already">Sudah dibaca</button>
                 <button class="delete-book">Hapus buku</button>
             </div> -->
+            </div>
         </section>
-        <section id="already-read-rack">
+        <section>
             <h2>Sudah dibaca</h2>
-            <!-- <div class="book-item">
+            <div class="all-books" id="already-read-rack">
+                <!-- <div class="book-item">z
                 <h3>Harry Potter</h3>
                 <p>Penulis: J.K. Rowlins</p>
                 <p>Tahun rilis: 2021</p>
                 <button class="move-to-unread">Belum dibaca</button>
                 <button class="delete-book">Hapus buku</button>
             </div> -->
+            </div>
         </section>
     </main>
-    <script src="assets/js/dom.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
