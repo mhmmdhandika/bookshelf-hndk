@@ -7,18 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookshelf Apps</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
 </head>
 
 <body>
     <nav>
         <div id="navbar">
             <h1>Bookshelf Apps</h1>
-            <form id="search-bar">
-                <input type="search" placeholder="Cari buku..." name="search" title="Cari buku di masing-masing rak"
-                    id="search-input">
-                <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
-            </form>
         </div>
     </nav>
     <main>
@@ -36,28 +31,14 @@
                 <button type="submit">Masukkan ke dalam rak</button>
             </form>
         </section>
-        <section>
+        <section id="unread-shelf">
             <h2>Belum dibaca</h2>
             <div class="all-books" id="unread-rack">
-                <!-- <div class="book-item">
-                <h3>Harry Potter</h3>
-                <p>Penulis: J.K. Rowlins</p>
-                <p>Tahun rilis: 2021</p>
-                <button class="move-to-already">Sudah dibaca</button>
-                <button class="delete-book">Hapus buku</button>
-            </div> -->
             </div>
         </section>
-        <section>
+        <section id="already-read-shelf">
             <h2>Sudah dibaca</h2>
             <div class="all-books" id="already-read-rack">
-                <!-- <div class="book-item">z
-                <h3>Harry Potter</h3>
-                <p>Penulis: J.K. Rowlins</p>
-                <p>Tahun rilis: 2021</p>
-                <button class="move-to-unread">Belum dibaca</button>
-                <button class="delete-book">Hapus buku</button>
-            </div> -->
             </div>
         </section>
     </main>

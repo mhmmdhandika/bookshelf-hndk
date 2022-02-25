@@ -11,7 +11,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* nav */
 nav {
     background-color: #7900ff;
     position: sticky;
@@ -33,38 +32,6 @@ nav {
     margin: 0.8rem 0 0.8rem 0;
 }
 
-#search-bar {
-    display: inline-flex;
-}
-
-#search-input,
-#search-button {
-    height: 2rem;
-    border: none;
-}
-
-input[type="search"] {
-    width: 13rem;
-    padding-left: 1.1rem;
-    border-radius: 20px 0 0 20px;
-    background-color: white;
-}
-
-#search-button {
-    width: 3rem;
-    border-radius: 0 20px 20px 0;
-    border-left: none;
-    background-color: #f2f3f4;
-    color: rgb(124, 124, 124);
-}
-
-input[type="search"]:focus {
-    outline: none;
-}
-
-/* end of nav */
-
-/* main */
 main {
     width: 100%;
 }
@@ -84,7 +51,6 @@ main section button {
     border-radius: 15px;
 }
 
-/* input user */
 #input-book-user h1 {
     text-align: center;
 }
@@ -132,17 +98,11 @@ button[type="submit"] {
     background-color: #548cff;
 }
 
-/* end of input user */
-
-/* unread rack */
 section h2,
 section h2 {
     padding-left: 1rem;
 }
 
-/* end of unread rack */
-
-/* book item */
 .book-item {
     margin: 1rem;
     padding: 0 1rem 0 1rem;
@@ -175,11 +135,6 @@ section h2 {
     color: white;
 }
 
-/* end of book item */
-
-/* end of main */
-
-/* hover */
 #input-book-user form button:hover {
     background-color: #296bfa;
 }
@@ -190,16 +145,10 @@ section h2 {
     opacity: 0.5;
 }
 
-/* end of hover */
-
 @media (max-width: 800px) {
     #navbar {
         width: 100%;
         padding: 0 1rem 0 1rem;
-    }
-
-    input[type="search"] {
-        width: 7rem;
     }
 
     main section {
